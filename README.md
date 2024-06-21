@@ -1,24 +1,40 @@
-# README
+# Что надо сделать
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- [ ] Авторизация JWT
+- [x] Отображение списка задач с фильтрацией, сортировкой
+- [x] Добавление приоритета задачи
+- [x] Управление приоритетом задач - менять приоритет задачи
+- [x] Удаление задачи из проекта
+- [x] Управление статусом задачи - переносить из одного статуса в другой
+- [x] Добавление задачи к проекту
+- [x] Создание задачи
+- [x] Создание проекта
 
-Things you may want to cover:
+# Сортировка задач
 
-* Ruby version
+- [x] По приоритету
 
-* System dependencies
+# Фильтры для задач
 
-* Configuration
+- [x] По статусу
+- [x] По проекту
 
-* Database creation
+# Статусы Задачи
 
-* Database initialization
+- Backlog
+- To Do
+- In Progress
+- Test
+- Done
 
-* How to run the test suite
+# Приоритеты Задачи
 
-* Services (job queues, cache servers, search engines, etc.)
+- Low
+- Medium
+- Urgent
 
-* Deployment instructions
+# Идеи
 
-* ...
+1. Хранить доступы в базе данных.
+2. Парсить google spredsheet (GS) и заполнять таблицу с доступа. Например, в интерфейсе
+   можно вставить ссылку и автоматически произойдет импорт данных и GS в таблицу

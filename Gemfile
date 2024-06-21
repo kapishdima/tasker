@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 ruby "3.2.4"
 
+# Serializer Active Record to JSON Output
+gem 'active_model_serializers', '~> 0.10.14'
+
 # Gem for loading .env file
 gem 'dotenv', groups: [:development, :test]
 

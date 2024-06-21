@@ -19,6 +19,8 @@ services:
     depends_on:
       - tasker_db
   web:
+    tty: true
+    stdin_open: true
     container_name: tasker_web
     build: .
     volumes:
