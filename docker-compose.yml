@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  tasker_db:
+    container_name: tasker_db
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: tasker
+    ports:
+      - 5432:5432
+    volumes:
+      - ./db/docker-init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+    depends_on:
+      - tasker_db
+  web:
+    container_name: tasker_web
+    build: .
+    volumes:
+      - .:/rails
+    ports:
+      - 3000:3000
+    depends_on:
+      - tasker_db
+    env_file:
+      - .env
