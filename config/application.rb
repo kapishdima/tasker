@@ -10,7 +10,7 @@ module Tasker
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
-    config.api_only = true
+    # config.api_only = true
 
     config.logger = Logger.new(STDOUT)
 

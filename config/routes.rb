@@ -5,4 +5,6 @@ Rails.application.routes.draw do
     get "projects", to: "projects#index"
     post "projects", to: "projects#create"
   end
+
+  get "panels", to: "web/panels#index"
 end

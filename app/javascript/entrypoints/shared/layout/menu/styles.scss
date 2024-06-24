@@ -1,0 +1,24 @@
+.group-menu-items.p-accordion {
+  margin-bottom: 0;
+  .p-accordion-tab {
+    margin-bottom: 0;
+  }
+
+  .p-accordion-content {
+    border: none;
+    background: none;
+  }
+
+  .p-accordion-header-link {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #fff;
+  }
+}
+
+.group-menu-items.p-accordion
+  .p-accordion-header:not(.p-disabled).p-highlight
+  .p-accordion-header-link {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}

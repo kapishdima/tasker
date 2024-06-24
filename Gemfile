@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 ruby "3.2.4"
 
+# Tooling for building JavaScript with Vite.js [https://vite-ruby.netlify.app]
+gem 'vite_rails'
+
 # Serializer Active Record to JSON Output
 gem 'active_model_serializers', '~> 0.10.14'
 

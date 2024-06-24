@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Install Frontend dependencies
+echo "Installing frontend dependencies..."
+yarn install
+
+# Start the Rails server in the background
+echo "Starting Rails server..."
+./bin/rails server -b "0.0.0.0"
+

@@ -5,24 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= vite_client_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-    <%= vite_client_tag %>
-    <%= vite_javascript_tag 'application.tsx' %>
-    <!--
-      If using a TypeScript entrypoint file:
-        vite_typescript_tag 'application'
-
-      If using a .jsx or .tsx entrypoint, add the extension:
-        vite_javascript_tag 'application.jsx'
-
-      Visit the guide for more information: https://vite-ruby.netlify.app/guide/rails
-    -->
-
-
-    <%= vite_client_tag %>
-    <%= vite_javascript_tag 'application' %>
+    <%= vite_react_refresh_tag %>
+    <%= vite_typescript_tag 'application.tsx' %>
     <!--
       If using a TypeScript entrypoint file:
         vite_typescript_tag 'application'
@@ -36,6 +23,7 @@
   </head>
 
   <body>
+    <div id="root">
     <%= yield %>
   </body>
 </html>
