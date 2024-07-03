@@ -1,7 +1,7 @@
 import React from "react";
 import { Menu } from "primereact/menu";
 
-import { menu } from "../../../config";
+import { menu } from "../../../../config";
 import { Accordion, AccordionTab } from "primereact/accordion";
 import { Badge } from "primereact/badge";
 import { AppMenuItem } from "./MenuItem";

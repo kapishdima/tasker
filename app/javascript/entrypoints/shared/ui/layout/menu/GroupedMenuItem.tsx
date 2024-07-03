@@ -2,7 +2,7 @@ import React from "react";
 import { Accordion, AccordionTab } from "primereact/accordion";
 import { Badge } from "primereact/badge";
 
-import { MenuItem } from "../../../config";
+import { MenuItem } from "../../../../config";
 import { UngroupedMenuItem } from "./UngroupedMenuItem";
 
 import "./styles.scss";

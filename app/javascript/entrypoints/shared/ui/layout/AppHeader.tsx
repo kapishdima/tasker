@@ -1,7 +1,7 @@
 import React from "react";
 import { AppLogo } from "./AppLogo";
 import { InputText } from "primereact/inputtext";
-import { ProfileLayout } from "../../modules/user";
+import { ProfileLayout } from "../../../modules/user";
 
 export const AppHeader: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "primereact/button";
-import { MenuItem } from "../../../config";
+import { MenuItem } from "../../../../config";
 
 type UngroupedMenuItemProps = {
   item: MenuItem;

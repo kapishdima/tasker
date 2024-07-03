@@ -1,6 +1,7 @@
 import React from "react";
 import { AppSidebar } from "./AppSidebar";
 import { AppHeader } from "./AppHeader";
+import { TasksListPage } from "../../../modules/tasks/pages/TasksListPage";
 
 export const AppLayout: React.FC = () => {
   return (
@@ -11,7 +12,9 @@ export const AppLayout: React.FC = () => {
       <div className="col-2">
         <AppSidebar />
       </div>
-      <div className="col-10">Content</div>
+      <div className="col-10">
+        <TasksListPage />
+      </div>
     </div>
   );
 };
